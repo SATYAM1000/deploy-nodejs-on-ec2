@@ -23,6 +23,10 @@ const startServer = async () => {
       res.send("Hello World");
     });
 
+    app.get("/hello-satyam", (req, res) => {
+      res.send("Server is working fine");
+    });
+
     app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
   } catch (error) {
     console.error("Failed to connect to the database", error);
