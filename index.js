@@ -27,6 +27,10 @@ const startServer = async () => {
       res.send("Server is working fine");
     });
 
+    app.get("/hello-world", (req, res) => {
+      res.send("Hello World from backend");
+    });
+
     app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
   } catch (error) {
     console.error("Failed to connect to the database", error);
