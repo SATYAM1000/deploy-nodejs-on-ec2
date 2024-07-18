@@ -36,6 +36,9 @@ const startServer = async () => {
     app.get("/hello-satyam", (req, res) => {
       res.send("Server is working fine");
     });
+    app.get("/say-quote", (req, res) => {
+      res.send("Hello World from backend");
+    });
 
     app.get("/hello-world", (req, res) => {
       res.send("Hello World from backend");
