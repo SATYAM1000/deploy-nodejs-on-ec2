@@ -30,6 +30,10 @@ const startServer = async () => {
       res.send("Hello World");
     });
 
+    app.use("/home", (req, res) => {
+      res.send("Home Page");
+    });
+
     app.get("/test", (req, res) => {
       res.send("test app is working fine");
     });
